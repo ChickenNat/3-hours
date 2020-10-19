@@ -24,6 +24,8 @@ const quotes = [{
  function displayQuote (){
 
     let number = Math.floor(Math.random()*quotes.length);
-    console.log(number);
- 
+    quoteAuthor.innerHTML = quotes[number].name;
+    quote.innerHTML = quotes[number].quote;
+
+    
 }
